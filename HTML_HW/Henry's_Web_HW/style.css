@@ -1,0 +1,63 @@
+
+
+#explanation {
+
+    margin-left:60 px;
+    color: green;
+    font-style: italic;
+}
+
+/*
+#navbarSupportedContent {
+
+
+    text-align: : right;
+}
+*/
+
+.page_titles {
+
+    font-family: 'Montserrat',  Sans-Serif;
+    font-style: italic
+
+}
+Arial, Helvetica, sans-serif
+I think arial was nice but i am trying different things 
+/*
+#pleasework {
+
+    padding-left: 10px;
+    margin-left: 10px;
+}
+*/
+it did, then it didn't
+
+
+.descriptions {
+    padding-left: 60px;
+    margin-left: 60px;
+    text-align: left;
+}
+
+#world_photo {
+
+    align-content: right;
+}
+
+/*
+.row {
+
+    margin: -40;
+}
+*/
+
+  table#table1 {
+    width:80%; 
+    margin-left:10%; 
+    margin-right:10%;
+    background-color: rgb(240, 255, 249);
+  }
+
+  .container{
+      margin: 0 70px 0 70px;
+  }
