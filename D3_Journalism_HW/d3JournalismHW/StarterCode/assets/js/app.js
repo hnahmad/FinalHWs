@@ -14,7 +14,7 @@ var svg = d3.select("#scatter")
     .attr("height", height)
     .attr("class", "chart");
 
-// Labels for axes=================================
+// Labels for axes
 // Add first g - tag for x axis text (css class)
 svg.append("g").attr("class", "xText");
 var xText = d3.select(".xText");
@@ -27,7 +27,7 @@ xText.attr("transform",`translate(
     ${bottomTextY})`
     );
 
-// x-axis (bottom) ______________________________
+// x-axis (bottom) 
 // Build xText details (css class)
 xText.append("text")
     .attr("y", -19)
@@ -50,8 +50,8 @@ xText.append("text")
     .attr("class","aText inactive x")
     .text("Household Income (Median)");
 
-// y-axis (left)___________________________________
-// Second g tag for yText (css class)
+// y-axis (left)
+// Second g tag for yText
 svg.append("g").attr("class", "yText");
 var yText = d3.select(".yText");
 
@@ -64,7 +64,7 @@ yText.attr("transform",`translate(
     )rotate(-90)`
     );
 
-// Build yText details (css class)
+// Build yText details
 yText .append("text")
     .attr("y", -22)
     .attr("data-name", "obesity")
@@ -86,8 +86,8 @@ yText .append("text")
     .attr("class", "aText inactive y")
     .text("Lacks Healthcare (%)");
     
-// Visualize data  _______________________________________  
-// Define dynamic circle radius
+
+// Define circle radius
 var cRadius;
 function adjustRadius() {
   if (width <= 530) {
@@ -97,7 +97,7 @@ function adjustRadius() {
 }
 adjustRadius();
 
-// Read in data as promise... and then... newer d3.js method
+//Promise statement
 d3.csv("assets/data/data.csv").then(function(data) {
     visualize(data);
 });
